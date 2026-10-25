@@ -4,71 +4,214 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AdLens Privacy Policy</title>
+<meta name="description" content="Privacy policy for AdLens - Popup Ad Detector, an Android app by CloudGTX.">
 <style>
-  :root { --bg:#f3f2ee; --surface:#ffffff; --ink:#121212; --muted:#6e6c66; --line:#dedbd3; --accent:#f57200; }
+  :root { --bg:#f3f2ee; --surface:#ffffff; --surface2:#e9e7e1; --ink:#121212; --muted:#6e6c66; --line:#dedbd3; --accent:#f57200; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg:#0d0d0d; --surface:#171717; --ink:#f3f2ee; --muted:#8f8c85; --line:#2a2a2a; --accent:#ff7a00; }
+    :root { --bg:#0d0d0d; --surface:#171717; --surface2:#222222; --ink:#f3f2ee; --muted:#8f8c85; --line:#2a2a2a; --accent:#ff7a00; }
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body { margin:0; background:var(--bg); color:var(--ink);
-         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
   .brand { display:flex; align-items:center; gap:10px; font-weight:800; font-size:20px; }
   .dot { width:10px; height:10px; border-radius:50%; background:var(--accent); }
   h1 { font-size: clamp(28px, 6vw, 40px); line-height:1.1; letter-spacing:-0.02em; margin:24px 0 8px; }
   .meta { color:var(--muted); margin:0 0 28px; }
-  section { background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:20px; margin-bottom:12px; }
-  h2 { font-size:18px; margin:0 0 8px; }
-  p, li { color:var(--muted); }
+  section { background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:20px; margin-bottom:12px; scroll-margin-top: 16px; }
+  h2 { font-size:19px; margin:0 0 10px; letter-spacing:-0.01em; }
+  h2 .n { color: var(--accent); margin-right: 6px; }
+  h3 { font-size:16px; margin:16px 0 6px; }
+  p, li, td { color:var(--muted); }
   p { margin: 0 0 10px; }
-  p:last-child { margin-bottom: 0; }
-  ul { margin: 0; padding-left: 20px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+  ul { margin: 0 0 10px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
   strong { color: var(--ink); }
   a { color: var(--accent); }
+  code { font-size: 14px; background: var(--surface2); padding: 1px 6px; border-radius: 6px; color: var(--ink); }
+  .toc ol { margin:0; padding-left: 22px; columns: 2; column-gap: 24px; }
+  .toc li { break-inside: avoid; }
+  @media (max-width: 560px) { .toc ol { columns: 1; } }
+  .table { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink); font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  @media (max-width: 600px) {
+    table, tbody, tr, td { display: block; width: 100%; }
+    tr:first-child { display: none; }
+    tr { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    tr:last-child { border-bottom: 0; }
+    td { border: 0; padding: 2px 0; }
+    td::before { content: attr(data-label); display: block; color: var(--ink); font-weight: 600; font-size: 13px; margin-top: 6px; }
+    td:first-child::before { display: none; }
+    td:first-child { color: var(--ink); font-weight: 600; }
+  }
 </style>
 </head>
 <body>
 <main>
   <div class="brand"><span class="dot"></span>AdLens</div>
   <h1>Privacy Policy</h1>
-  <p class="meta">AdLens - Popup Ad Detector. Last updated: 24 October 2026.</p>
+  <p class="meta">AdLens - Popup Ad Detector, by CloudGTX. Effective and last updated: 24 October 2026.</p>
 
-  <section>
-    <h2>The short version</h2>
-    <p><strong>AdLens does not collect, sell or share any personal data.</strong> It has no internet permission, so nothing it sees can leave your phone.</p>
+  <section class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#overview">Data at a glance</a></li>
+      <li><a href="#permissions">Permissions and why</a></li>
+      <li><a href="#device">Data that stays on your phone</a></li>
+      <li><a href="#sent">Data that leaves your phone</a></li>
+      <li><a href="#use">How we use data</a></li>
+      <li><a href="#never">What we never do</a></li>
+      <li><a href="#sharing">Sharing and service providers</a></li>
+      <li><a href="#retention">How long data is kept</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#rights">Your choices and rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#links">Other apps and links</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
   </section>
 
-  <section>
-    <h2>What AdLens sees and why</h2>
+  <section id="who">
+    <h2><span class="n">1</span>Who we are</h2>
+    <p>AdLens - Popup Ad Detector ("AdLens", "the app") is an Android app made by CloudGTX ("we", "us"). It helps you find which app on your phone is showing pop-up ads. This policy explains what information the app handles, why, and the choices you have. It applies to the AdLens app and to this page.</p>
+    <p>For the information described in section 5, CloudGTX is the data controller. You can reach us at <a href="mailto:cloudgtxdesigns@gmail.com">cloudgtxdesigns@gmail.com</a>.</p>
+  </section>
+
+  <section id="overview">
+    <h2><span class="n">2</span>Data at a glance</h2>
+    <div class="table">
+      <table>
+        <tr><th>Data</th><th>Where it goes</th><th>Kept for</th></tr>
+        <tr><td data-label="Data">Package name and window type of apps that open on your screen</td><td data-label="Where it goes">Stays on your phone</td><td data-label="Kept for">30 days, or until you clear the list</td></tr>
+        <tr><td data-label="Data">Names, icons and install dates of installed apps</td><td data-label="Where it goes">Read on your phone, not stored by us</td><td data-label="Kept for">Not stored</td></tr>
+        <tr><td data-label="Data">Your whitelist and settings</td><td data-label="Where it goes">Stays on your phone</td><td data-label="Kept for">Until you change them or uninstall</td></tr>
+        <tr><td data-label="Data">Package names of your installed apps (Scan apps only)</td><td data-label="Where it goes">Sent to our server to be checked</td><td data-label="Kept for">Not stored, discarded after the answer</td></tr>
+        <tr><td data-label="Data">Feedback emails you choose to send</td><td data-label="Where it goes">Our email inbox</td><td data-label="Kept for">Until the conversation is finished, or deleted on request</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="permissions">
+    <h2><span class="n">3</span>Permissions and why</h2>
     <ul>
-      <li><strong>Accessibility service.</strong> Android tells AdLens the package name and the type of each window that opens on your screen. AdLens uses this only to show you which app opened a pop-up ad. It does not read text, passwords, notifications or anything else on your screen.</li>
-      <li><strong>Display over other apps.</strong> Used only to show the floating icon on top of other apps.</li>
-      <li><strong>Installed apps.</strong> AdLens reads the names and icons of installed apps to display them in its lists and to let you choose apps to ignore.</li>
-      <li><strong>Uninstall requests.</strong> When you tap Uninstall, AdLens opens Android's own uninstall dialog. You confirm or cancel it there.</li>
+      <li><strong>Accessibility service.</strong> Android tells AdLens the package name and the type of each window that opens on your screen. AdLens uses this only to show you which app opened a pop-up ad, to update the floating icon, and to add the app to your Recently opened list. It does not read text, passwords, messages, notifications or anything else on your screen, and it does not perform actions for you. Before you turn it on, the app explains this and asks you to confirm. You can turn it off at any time in your phone's Accessibility settings.</li>
+      <li><strong>See installed apps.</strong> Needed to show app names and icons in the lists, to let you choose apps for your whitelist, and to know which apps to check when you run Scan apps.</li>
+      <li><strong>Request to uninstall apps.</strong> When you tap Uninstall, AdLens opens Android's own uninstall dialog. Nothing is removed unless you confirm there.</li>
+      <li><strong>Internet and network state.</strong> Used only by Scan apps, to check package names against our adware list.</li>
+    </ul>
+    <p>AdLens does not ask for your location, contacts, camera, microphone, photos, files, phone calls or SMS.</p>
+  </section>
+
+  <section id="device">
+    <h2><span class="n">4</span>Data that stays on your phone</h2>
+    <ul>
+      <li><strong>Recently opened list:</strong> one entry per app that came to the front, with its package name, the last time it opened, the window type, and whether it showed an ad screen.</li>
+      <li><strong>Whitelist:</strong> the apps you trust and chose to leave alone.</li>
+      <li><strong>Settings:</strong> theme, language and whether the floating icon is on.</li>
+    </ul>
+    <p>This is kept in the app's private storage, which other apps cannot read. We never receive it. You can clear the list in Settings, and uninstalling AdLens deletes all of it. If your phone's Android backup is turned on, Android may include this data in your own Google backup.</p>
+  </section>
+
+  <section id="sent">
+    <h2><span class="n">5</span>Data that leaves your phone</h2>
+    <h3>Scan apps</h3>
+    <p>Only when you start a scan, AdLens sends the package names of the apps you installed (for example <code>com.example.game</code>) to our server, one name per request, to check whether each one is on a list of apps that security researchers reported as adware. System and pre-installed apps, and apps on your whitelist, are not sent. The server answers yes or no for each name.</p>
+    <p>No account, name, email, device ID, advertising ID or location is sent with them. We do not store the package names you send, keep a history of scans, or link them to you. As with any internet connection, our cloud hosting provider receives your device's IP address in order to deliver the answer (see section 8).</p>
+    <h3>Feedback email</h3>
+    <p>If you choose to send feedback, your own email app sends us a message with your email address, what you wrote, and the app version, phone model and Android version filled in at the end. You can edit or delete any of it before sending. We use it only to reply to you and to fix problems.</p>
+  </section>
+
+  <section id="use">
+    <h2><span class="n">6</span>How we use data</h2>
+    <ul>
+      <li>To show you which app opened a window or a pop-up ad (on your phone).</li>
+      <li>To check your installed apps against the list of reported adware when you run Scan apps.</li>
+      <li>To answer your emails and improve the app based on your feedback.</li>
+      <li>To protect the service from abuse, for example by limiting how the adware list can be read.</li>
+    </ul>
+    <p><strong>Legal bases (EEA and UK users):</strong> we process the scan request because you ask for it (performance of the service you requested), and feedback emails on the basis of our legitimate interest in replying to you and improving AdLens. The Accessibility service only runs after you turn it on yourself, and you can turn it off at any time.</p>
+  </section>
+
+  <section id="never">
+    <h2><span class="n">7</span>What we never do</h2>
+    <ul>
+      <li>Sell, rent or trade your data.</li>
+      <li>Show ads, use advertising IDs, or use your data for advertising.</li>
+      <li>Use analytics, tracking or crash-reporting tools.</li>
+      <li>Read the content of your screen, your messages, passwords or notifications.</li>
+      <li>Create accounts or profiles about you.</li>
     </ul>
   </section>
 
-  <section>
-    <h2>What is stored on your phone</h2>
-    <p>The Recently opened list (app package names and the time each app came to the front, kept for 30 days), your list of ignored apps, and your settings (theme, language, floating icon). This stays on your device. You can clear the list in Settings, and uninstalling AdLens deletes everything.</p>
+  <section id="sharing">
+    <h2><span class="n">8</span>Sharing and service providers</h2>
+    <p>We use a cloud hosting provider to store the adware list and answer scan requests on our behalf. It acts as our service provider (data processor): it handles the package names and your IP address only to deliver the answer, under its data processing terms, and may not use them for its own purposes.</p>
+    <p>We do not share your information with anyone else, except if the law requires it (for example a valid court order), or to protect the rights, safety and security of our users or the app. If AdLens is ever transferred to another owner, this policy will continue to apply to any information involved.</p>
   </section>
 
-  <section>
-    <h2>Links and email</h2>
-    <p>"Rate the app", "Share" and this page open in other apps (Google Play, your browser or a sharing app). Those apps have their own privacy policies.</p>
-    <p>If you send feedback, your email app sends a message to us that includes your email address, what you wrote, and the app version, phone model and Android version filled in at the end (you can delete those before sending). We use it only to reply to you.</p>
+  <section id="retention">
+    <h2><span class="n">9</span>How long data is kept</h2>
+    <ul>
+      <li><strong>On your phone:</strong> the Recently opened list keeps entries for 30 days. Everything is deleted when you clear it or uninstall AdLens.</li>
+      <li><strong>Scan requests:</strong> not stored by us. Our hosting provider may keep short-term technical logs for security and reliability, as described in its own terms.</li>
+      <li><strong>Feedback emails:</strong> kept until your question is resolved, then deleted on request.</li>
+    </ul>
   </section>
 
-  <section>
-    <h2>Children</h2>
-    <p>AdLens does not knowingly collect information from anyone, including children under 13.</p>
+  <section id="security">
+    <h2><span class="n">10</span>Security</h2>
+    <p>Scan requests travel over an encrypted connection (HTTPS). The adware list is protected by access rules that allow checking one name at a time and block anyone from reading or changing the list. Data on your phone stays in the app's private storage. No method of transmission or storage is completely secure, but we keep what we handle to the minimum needed.</p>
   </section>
 
-  <section>
-    <h2>Changes and contact</h2>
-    <p>If this policy changes, the new version will be posted on this page with a new date.</p>
-    <p>Questions: <a href="mailto:cloudgtxdesigns@gmail.com">cloudgtxdesigns@gmail.com</a></p>
+  <section id="transfers">
+    <h2><span class="n">11</span>International transfers</h2>
+    <p>Our hosting provider may process scan requests in the United States or other countries where it operates. It uses safeguards such as the EU Standard Contractual Clauses for these transfers.</p>
   </section>
+
+  <section id="rights">
+    <h2><span class="n">12</span>Your choices and rights</h2>
+    <h3>Choices in the app</h3>
+    <ul>
+      <li>Don't run Scan apps: nothing is sent.</li>
+      <li>Add apps to your whitelist so they are never listed, shown in the floating icon or scanned.</li>
+      <li>Clear the Recently opened list in Settings.</li>
+      <li>Turn the floating icon off in Settings, or turn Accessibility off in your phone's settings.</li>
+      <li>Uninstall AdLens to delete all data stored by the app.</li>
+    </ul>
+    <h3>Your rights</h3>
+    <p>Depending on where you live (for example under the GDPR in the EEA and UK, or the CCPA/CPRA in California), you may have the right to access, correct, delete or receive a copy of your personal information, to object to or restrict its use, and to complain to your local data protection authority. Because we do not store scan data or keep accounts, the only personal information we may hold about you is a feedback email. Email us to exercise any of these rights and we will reply within 30 days.</p>
+    <p><strong>California:</strong> we do not sell or share personal information for cross-context behavioural advertising, and we do not use sensitive personal information to infer characteristics about you.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="n">13</span>Children</h2>
+    <p>AdLens is not directed to children under 13 (or the minimum age in your country) and we do not knowingly collect personal information from them. If you believe a child has sent us personal information, for example by email, contact us and we will delete it.</p>
+  </section>
+
+  <section id="links">
+    <h2><span class="n">14</span>Other apps and links</h2>
+    <p>"Rate the app", "Share with friends", "Send feedback" and this page open other apps such as Google Play, your browser, a sharing app or your email app. Those apps and services have their own privacy policies, which we do not control.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="n">15</span>Changes to this policy</h2>
+    <p>If we change this policy, we will post the new version on this page and update the date at the top. If a change affects what data leaves your phone, we will also mention it in the app's update notes.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="n">16</span>Contact</h2>
+    <p>Questions or requests about your privacy: <a href="mailto:cloudgtxdesigns@gmail.com">cloudgtxdesigns@gmail.com</a></p>
+  </section>
+
+  <p class="meta">See also: <a href="terms.html">Terms of Use</a></p>
 </main>
 </body>
 </html>
